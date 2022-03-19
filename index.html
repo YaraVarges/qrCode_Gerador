@@ -8,13 +8,24 @@
     <title>QR-Code Gerador</title>
 </head>
 <body>
-    <h1>Gerador de QRCode</h1>
+    <div id="container">
+        <div>
+            <h1>Gerador de QRCode</h1>
+            
+            <input id="QRCode" type="text" value="">
+        </div>
+        <div>
+            <button onclick="gerarQRcode()">Gerar QRCode</button>
+        </div>        
+        
+    </div>
+    
+    <div id="imgCode">
+       <img id="qrcodeImg" src="./img/QR.png" > 
+    </div>
+    
 
-    <input id="QRCode" type="text" value="">
-
-    <button onclick="gerarQRcode()">Gerar QRCode</button>
-
-    <img id="qrcodeImg" src="" >
+    
 
     <script src="./script.js"></script>
 </body>
